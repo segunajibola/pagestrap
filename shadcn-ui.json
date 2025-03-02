@@ -1,0 +1,5 @@
+{
+  "components": "src/components/ui",
+  "theme": "default",
+  "rsc": false
+}

@@ -1,13 +1,15 @@
 import "./App.css";
-import { Button } from "@/components/ui/button";
-import { Navbar, Hero } from "./section";
+import { Navbar, Hero, Services, Portfolio, Testimonial, Footer } from "./section";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      
+      <Services />
+      <Portfolio />
+      <Testimonial />
+      <Footer />
     </>
   );
 }
