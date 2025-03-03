@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function CTASection() {
   return (
-    <section className="py-16 bg-blue-600 text-white text-center">
+    <section className="py-32 bg-blue-600 text-white text-center">
       <div className="container mx-auto px-6">
         <motion.h2
           className="text-3xl font-bold mb-4"
@@ -19,7 +19,8 @@ export default function CTASection() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
         >
-          Let's discuss your project and bring your vision to life with a stunning website.
+          Let's discuss your project and bring your vision to life with a
+          stunning website.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
