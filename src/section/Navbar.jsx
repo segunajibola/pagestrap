@@ -7,27 +7,24 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-800 shadow-md sticky top-0 z-50">
+    <nav className="bg-white text-[#0000ff] shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="inline">
-          <img src="/pagestrap-logo" alt="" width={50} height={50} />
-          <a href="/" className="text-2xl font-bold text-gray-100">
-            age<span className="text-blue-500">Strap</span>
-          </a>
+        <div className="inline text-[#0000ff]">
+          <img src="/pagestrap-text.png" alt="" width="150px" height="20px" />
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <a href="/services" className="text-gray-100 hover:text-red-500">
+          <a href="/services" className="text-[#0000ff] hover:text-red-500">
             Services
           </a>
-          <a href="/portfolio" className="text-gray-100 hover:text-red-500">
+          <a href="/portfolio" className="text-[#0000ff] hover:text-red-500">
             Portfolio
           </a>
-          <a href="/about" className="text-gray-100 hover:text-red-500">
+          <a href="/about" className="text-[#0000ff] hover:text-red-500">
             About
           </a>
-          <a href="/contact" className="text-gray-100 hover:text-red-500">
+          <a href="/contact" className="text-[#0000ff] hover:text-red-500">
             Contact
           </a>
         </div>
@@ -49,16 +46,16 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg py-4 flex flex-col items-center space-y-4">
-          <a href="/services" className="text-gray-100 hover:text-red-500">
+          <a href="/services" className="text-[#0000ff] hover:text-red-500">
             Services
           </a>
-          <a href="/portfolio" className="text-gray-100 hover:text-red-500">
+          <a href="/portfolio" className="text-[#0000ff] hover:text-red-500">
             Portfolio
           </a>
-          <a href="/about" className="text-gray-100 hover:text-red-500">
+          <a href="/about" className="text-[#0000ff] hover:text-red-500">
             About
           </a>
-          <a href="/contact" className="text-gray-100 hover:text-red-500">
+          <a href="/contact" className="text-[#0000ff] hover:text-red-500">
             Contact
           </a>
           <Button className="bg-blue-500 text-white hover:bg-blue-600">

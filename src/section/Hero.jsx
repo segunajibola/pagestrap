@@ -7,8 +7,9 @@ const Hero = () => {
         Welcome to <span className="text-blue-500">PageStrap</span>
       </h1> 
       <p className="text-2xl text-gray-100 mt-2">
-        We create stunning websites and digital experiences to help your
-        businesses <span className="text-blue-500">grow</span>.
+        Custome websites made for your
+        businesses 
+        {/* <span className="text-blue-500">grow</span>. */}
       </p>
     </main>
   );
