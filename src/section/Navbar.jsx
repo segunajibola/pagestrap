@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white text-[#0000ff] shado sticky top-0 z-50">
+    <nav className="bg-white text-[#0000ff] sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="inline text-[#0000ff]">
           <img src="/pagestrap-text.png" alt="" width="150px" height="3px" />
