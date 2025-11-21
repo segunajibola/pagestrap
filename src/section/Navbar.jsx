@@ -7,30 +7,30 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white text-[#0000ff] sticky top-0 z-50">
+    <nav className="bg-white text-[#2a2a2f] sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="inline text-[#0000ff]">
-          <img src="/pagestrap-text.png" alt="" width="150px" height="3px" />
+        <div className="inline text-myColor">
+          <img src="/Svg/2.svg" alt="" width="" height="" />
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <a href="/services" className="text-[#0000ff] hover:text-red-500">
+          <a href="/services" className="text-myColor hover:text-red-500">
             Services
           </a>
-          <a href="/portfolio" className="text-[#0000ff] hover:text-red-500">
+          <a href="/portfolio" className="text-myColor hover:text-red-500">
             Portfolio
           </a>
-          <a href="/about" className="text-[#0000ff] hover:text-red-500">
+          <a href="/about" className="text-myColor hover:text-red-500">
             About
           </a>
-          <a href="/contact" className="text-[#0000ff] hover:text-red-500">
+          <a href="/contact" className="text-myColor hover:text-red-500">
             Contact
           </a>
         </div>
 
         {/* CTA Button */}
-        <Button className="hidden md:block bg-blue-500 text-white hover:bg-black hover:text-gray-200">
+        <Button className="hidden md:block bg-myColor text-white hover:bg-black hover:text-gray-200">
           Get a Quote
         </Button>
 
@@ -46,19 +46,19 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg py-4 flex flex-col items-center space-y-4">
-          <a href="/services" className="text-[#0000ff] hover:text-red-500">
+          <a href="/services" className="text-myColor hover:text-red-500">
             Services
           </a>
-          <a href="/portfolio" className="text-[#0000ff] hover:text-red-500">
+          <a href="/portfolio" className="text-myColor hover:text-red-500">
             Portfolio
           </a>
-          <a href="/about" className="text-[#0000ff] hover:text-red-500">
+          <a href="/about" className="text-myColor hover:text-red-500">
             About
           </a>
-          <a href="/contact" className="text-[#0000ff] hover:text-red-500">
+          <a href="/contact" className="text-myColor hover:text-red-500">
             Contact
           </a>
-          <Button className="bg-blue-500 text-white hover:bg-blue-600">
+          <Button className="bg-myColor text-white hover:bg-black hover:text-gray-200">
             Get a Quote
           </Button>
         </div>
