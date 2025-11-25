@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section
       className="
-        w-full h-screen bg-cover bg-center bg-no-repeat
+        w-full h-[75vh] md:h-screen bg-cover bg-center bg-no-repeat
         flex flex-col justify-center items-center
         text-center
         px-6
