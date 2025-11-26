@@ -1,11 +1,20 @@
 import "./App.css";
-import { Navbar, Hero, Services, Portfolio, Testimonial, Footer } from "./section";
+import {
+  Navbar,
+  About,
+  Hero,
+  Services,
+  Portfolio,
+  Testimonial,
+  Footer,
+} from "./section";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
+      <About />
       <Services />
       <Portfolio />
       <Testimonial />
