@@ -7,7 +7,7 @@ import { services } from "@/data/service.jsx";
 export default function Services() {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
   return (
-    <section className="py-16 bg-gray-100 text-center" ref={ref}>
+    <section id="services" className="py-16 bg-gray-100 text-center" ref={ref}>
       <div className="container mx-auto px-6">
         <motion.h2
           className="text-3xl font-bold text-gray-800 mb-6"
@@ -25,7 +25,7 @@ export default function Services() {
         >
           Cutting-edge web solutions to help your business grow online.
         </motion.p>
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6 items-start">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -35,7 +35,7 @@ export default function Services() {
               }
               transition={{ delay: index * 0.1, duration: 0.3 }}
             >
-              <Card className="p-2 shadow-xs rounded-md h-[85vh]">
+              <Card className="p-2 shadow-sm rounded-md h-full flex flex-col">
                 <CardHeader className="flex flex-col items-center">
                   <div className="text-blue-500">{service.icon}</div>
                   <CardTitle className="text-xl font-semibold">
@@ -55,9 +55,11 @@ export default function Services() {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          <Button className="px-6 py-3 text-lg rounded-full bg-blue-600 hover:bg-blue-700 text-white">
-            Get a Free Quote
-          </Button>
+          <a href="#contact">
+            <Button className="px-6 py-3 text-lg rounded-full bg-myColor hover:bg-[#1f18a4] text-white">
+              Get a Free Quote
+            </Button>
+          </a>
         </motion.div>
       </div>
     </section>

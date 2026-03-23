@@ -5,7 +5,8 @@ const About = () => {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
   return (
     <section
-      className="w-full px-6 md:px-12 py-20 bg-myColor text-gray-200"
+      id="about"
+      className="w-full px-6 md:px-12 py-16 md:py-24 bg-myColor text-gray-200"
       ref={ref}
     >
       <div className="max-w-5xl mx-auto">
